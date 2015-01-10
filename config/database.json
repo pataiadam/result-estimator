@@ -1,0 +1,24 @@
+{
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+
+  "dev": {
+    "driver": "pg",
+    "user": "estimator_user",
+    "password": "kacsa123",
+    "host": "localhost",
+    "database": "estimator",
+    "port": 5432
+  },
+
+  "prod": {
+    "driver": "pg",
+    "user": "estimator_user",
+    "password": "kacsa123",
+    "host": "localhost",
+    "database": "estimator",
+    "port": 5432
+  }
+}
