@@ -7,14 +7,15 @@
 
 module.exports = {
     index:  function (req, res) {
-        Test.find().exec(function (err, tests) {
+        Matches.find().exec(function (err, matches) {
             if (!!err) {
                 sails.log.error(err);
                 req.flash('error', err);
                 return;
             }
-            Test.create({text: "LOL "+ new Date()}).exec(function (err, test){
-                res.json({test: tests});
+            res.view({
+                matches: matches,
+                errors: req.flash('error')
             });
         });
     }
