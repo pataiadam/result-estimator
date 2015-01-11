@@ -13,8 +13,9 @@ module.exports = {
                 req.flash('error', err);
                 return;
             }
-            Test.create({text: "LOL "+ new Date()}).exec(function (err, test){
-                res.json({test: tests});
+            res.view({
+                tests: tests,
+                errors: req.flash('error')
             });
         });
     }
