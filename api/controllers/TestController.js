@@ -13,7 +13,7 @@ module.exports = {
                 req.flash('error', err);
                 return;
             }
-            Test.create({text: "LOL"}).exec(function (err, test){
+            Test.create({text: "LOL "+ new Date()}).exec(function (err, test){
                 res.json({test: tests});
             });
         });
