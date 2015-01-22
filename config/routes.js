@@ -32,8 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'TestController.index'
+  '/': 'TestController.index',
 
+  '/sedcup/dummy': 'SedCupController.dummy'
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
