@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': 'TestController.index',
 
-  '/sedcup/dummy': 'SedCupController.dummy'
+  '/sedcup/dummy': 'SedCupController.dummy',
+  'POST /sedcup/add': 'SedCupController.add'
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
