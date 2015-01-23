@@ -7,7 +7,7 @@ module.exports = {
     },
 
     add: function(req, res) {
-        sails.debug.log(req.params);
+        sails.log.debug(req.params); //dont belive to editor fffuuuuck
     	res.json({data: 'POK'});
     }
 }
