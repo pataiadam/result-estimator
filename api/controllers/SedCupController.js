@@ -6,7 +6,8 @@ module.exports = {
         res.json({data: 'OK'});
     },
 
-    add: function(req, res) {    	
-    	res.json({data: req})
+    add: function(req, res) {
+        sails.debug.log(req.params);
+    	res.json({data: 'POK'});
     }
 }
