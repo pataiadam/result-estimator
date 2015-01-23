@@ -7,6 +7,6 @@ module.exports = {
     },
 
     add: function(req, res) {    	
-    	res.json({data: req.params})
+    	res.json({data: req})
     }
 }
