@@ -14,6 +14,12 @@ module.exports = {
         },
         'content': {
             type: 'string',
+        },
+        'longitude': {
+            type: 'float',
+        },
+        'latitude': {
+            type: 'float',
         }
     }
 };
