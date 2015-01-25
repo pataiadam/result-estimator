@@ -38,7 +38,9 @@ module.exports.routes = {
   'POST /sedcup/add': 'SedCupController.add',
 
   'GET /todos/get': 'TodosController.get',
-  'POST /todos/add': 'TodosController.add'
+  'POST /todos/add': 'TodosController.add',
+  'POST /todos/delete': 'TodosController.delete',
+  'POST /todos/update': 'TodosController.update'
 
 
 
